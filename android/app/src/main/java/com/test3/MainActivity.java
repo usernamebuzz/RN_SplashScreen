@@ -1,8 +1,8 @@
 package com.test3;
 
 import com.facebook.react.ReactActivity;
-import org.devio.rn.splashscreen.SplashScreen; // Import 하시면 됩니다..
-import android.os.Bundle; // Import 하시면 됩니다..
+import org.devio.rn.splashscreen.SplashScreen;
+import android.os.Bundle; 
 
 public class MainActivity extends ReactActivity {
 
