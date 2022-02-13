@@ -5,6 +5,7 @@ import KakaoButton from '../components/KakaoButton';
 import GoogleButton from '../components/GoogleButton';
 
 function WelcomeScreen() {
+
   return (
     <KeyboardAvoidingView
       style={styles.keyboardAvoidingView}
@@ -12,7 +13,7 @@ function WelcomeScreen() {
       <SafeAreaView style={styles.block}>
         <Text style={styles.title}>환영합니다!</Text>
         <Text style={styles.description}>프로필을 설정하세요.</Text>
-        <KakaoButton />
+        <KakaoButton/>
         <GoogleButton />
       </SafeAreaView>
     </KeyboardAvoidingView>

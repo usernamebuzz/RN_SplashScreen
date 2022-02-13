@@ -1,9 +1,15 @@
 import {TouchableOpacity, StyleSheet, Image} from 'react-native';
 import React from 'react';
+import {login} from '@react-native-seoul/kakao-login';
 
 const KakaoButton = () => {
+  const signInWithKakao = async () => {
+    const token = await login();
+    setResult(JSON.stringify(token));
+  };
+
   return (
-    <TouchableOpacity style={styles.iconbutton}>
+    <TouchableOpacity style={styles.iconbutton} onPress={signInWithKakao}>
       <Image source={require('../assets/Kakao.png')} />
     </TouchableOpacity>
   );

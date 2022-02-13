@@ -1,4 +1,4 @@
-import {TouchableOpacity, StyleSheet, Image} from 'react-native';
+import {TouchableOpacity, StyleSheet, Image, Button} from 'react-native';
 import React from 'react';
 
 const GoogleButton = () => {

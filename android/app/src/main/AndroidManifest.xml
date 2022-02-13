@@ -8,7 +8,7 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
-      android:allowBackup="false"
+      android:allowBackup="true"
       android:theme="@style/AppTheme">
 
       <activity
@@ -28,7 +28,19 @@
         android:launchMode="singleTask"
         android:windowSoftInputMode="adjustResize"
         android:exported="true"/>
-        
+
+      <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+  <intent-filter>
+      <action android:name="android.intent.action.VIEW" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <category android:name="android.intent.category.BROWSABLE" />
+
+      <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+      <data android:host="oauth"
+          android:scheme="kakao0ee1b4b875e29854e155f83bc3d1bfab" />
+  </intent-filter>
+</activity>
+
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 </manifest>
