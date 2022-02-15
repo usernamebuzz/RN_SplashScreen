@@ -2,7 +2,7 @@ import React from 'react';
 import {KeyboardAvoidingView, Platform, StyleSheet, Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import KakaoButton from '../components/KakaoButton';
-import GoogleButton from '../components/GoogleButton';
+import NaverButton from '../components/NaverButton';
 
 function WelcomeScreen() {
 
@@ -14,7 +14,7 @@ function WelcomeScreen() {
         <Text style={styles.title}>환영합니다!</Text>
         <Text style={styles.description}>프로필을 설정하세요.</Text>
         <KakaoButton/>
-        <GoogleButton />
+        <NaverButton />
       </SafeAreaView>
     </KeyboardAvoidingView>
   );
